@@ -1,7 +1,7 @@
 # Dump Yo Shizz Trailer
-Dump Truck Rental in Hampton and surrounding areas
+Dump Trailer Rental in Hampton and surrounding areas
 ## About
-   Dump trailer rentals in Hampton, GA.
+   Dump Trailer rentals in Hampton, GA.
    
    We drop it off, you load it, we haul it away!
 
