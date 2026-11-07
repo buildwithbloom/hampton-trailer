@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hampton Dump Trailer Rentals | Coming Soon</title>
+  <meta name="description" content="Residential dump trailer rentals in Hampton, GA. We drop it off, you load it, we haul it away. Call (555) 555-0100.">
+  <meta name="theme-color" content="#1c1c1c">
+
+  <style>
+    /* ===== Colors used across the page ===== */
+    :root {
+      --charcoal: #1c1c1c;   /* main dark background */
+      --steel: #2b2b2b;      /* card background */
+      --yellow: #ffc20e;     /* construction yellow (main accent) */
+      --yellow-dark: #e0a800;/* yellow for hover/press */
+      --white: #ffffff;
+      --gray: #c9c9c9;       /* softer text */
+    }
+
+    /* ===== Basic reset ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===== Page background and default text ===== */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--charcoal);
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    /* Yellow-and-black caution stripe at the very top and bottom */
+    .stripe {
+      height: 14px;
+      background: repeating-linear-gradient(
+        -45deg,
+        var(--yellow) 0 18px,
+        var(--charcoal) 18px 36px
+      );
+    }
+
+    /* ===== Main content area (centers the card) ===== */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+      background-color: var(--steel);
+      border-top: 6px solid var(--yellow);
+      border-radius: 12px;
+      padding: 36px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Small label above the headline */
+    .location {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 12px;
+    }
+
+    /* Business name */
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.15;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 span {
+      color: var(--yellow);
+    }
+
+    /* One-line description */
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+
+    /* "Coming soon" badge */
+    .coming-soon {
+      display: inline-block;
+      background-color: var(--yellow);
+      color: var(--charcoal);
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .soon-text {
+      color: var(--gray);
+      margin-bottom: 28px;
+    }
+
+    /* Tap-to-call button */
+    .call-button {
+      display: block;
+      width: 100%;
+      background-color: var(--yellow);
+      color: var(--charcoal);
+      font-size: 1.25rem;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 18px 20px;
+      border-radius: 10px;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .call-button:hover,
+    .call-button:focus {
+      background-color: var(--yellow-dark);
+    }
+
+    .call-button:active {
+      transform: scale(0.98);
+    }
+
+    /* Visible outline for keyboard users */
+    .call-button:focus-visible {
+      outline: 3px solid var(--white);
+      outline-offset: 3px;
+    }
+
+    .call-note {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-top: 12px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--gray);
+      padding: 16px 20px 20px;
+    }
+
+    /* ===== Bigger screens (tablets and laptops) ===== */
+    @media (min-width: 700px) {
+      .card {
+        padding: 48px 48px;
+      }
+
+      h1 {
+        font-size: 2.75rem;
+      }
+
+      .tagline {
+        font-size: 1.15rem;
+      }
+
+      /* On a laptop the button doesn't need to stretch full width */
+      .call-button {
+        display: inline-block;
+        width: auto;
+        padding: 18px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <main>
+    <div class="card">
+      <p class="location">Hampton, GA</p>
+
+      <h1>Hampton <span>Dump Trailer</span> Rentals</h1>
+
+      <p class="tagline">
+        Dump trailer rentals for yard cleanups, home cleanouts, and DIY projects &mdash;
+        we drop it off, you load it, we haul it away.
+      </p>
+
+      <p class="coming-soon">Coming Soon</p>
+      <p class="soon-text">Our website is under construction. Need a trailer now? Give us a call!</p>
+
+      <a class="call-button" href="tel:+15555550100">
+        &#128222; Call (555) 555-0100
+      </a>
+      <p class="call-note">Tap the button to call from your phone.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Hampton Dump Trailer Rentals &middot; Hampton, GA
+  </footer>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+</body>
+</html>
